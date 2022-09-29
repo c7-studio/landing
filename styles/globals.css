@@ -7,6 +7,6 @@ html{
     font-family: "VT323", sans-serif;
 }
 
-html, body{
-    font-family: "VT323", sans serif
+.custom-img{
+    background-image: url('../img/hero.png')
 }
