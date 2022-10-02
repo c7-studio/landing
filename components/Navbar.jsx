@@ -34,13 +34,13 @@ const Navbar = () => {
             <img src="/logo.svg" alt="Logo" width='70px' height='auto'/>
             </Link>
             <ul className='hidden sm:flex'>
-                <li className='px-2 mx-3'>
+                <li className='px-2 mx-3 hover:text-gray-600'>
                     <Link href='/#services'>Services</Link>
                 </li>
-                <li className='px-2 mx-3'>
+                <li className='px-2 mx-3 hover:text-gray-600'>
                     <Link href='/#projects'>Projects</Link>
                 </li>
-                <li className='px-2 mx-3 border-black border'>
+                <li className='px-2 mx-3 hover:text-gray-600 border-black border hover:border-gray-600'>
                     <Link href='/#contact'>Contact</Link>
                 </li>
             </ul>

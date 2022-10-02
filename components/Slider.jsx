@@ -7,7 +7,7 @@ const Slider = ({slides}) => {
         <h1>Our services</h1>
         <div>
             {SliderData.map((slide, index) => {
-                return <img src={slide.image} alt='/' />
+                return <Image src={slide.image} alt='/' />
             })}
         </div>
     </div>

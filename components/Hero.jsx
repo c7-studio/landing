@@ -3,15 +3,23 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 
 const Hero = () => {
   return (
-    <div className='flex items-center justify-center h-screen mb-12 bg-fixed bg-cover custom-img'>
-        <div className='p-5 text-black z-[2] '>
+    <div className='flex items-center justify-center h-screen  bg-fixed bg-cover custom-img'>
+        <div className='p-5 mt-12 text-black z-[3] '>
             <h2 className='text-6xl mb-4'>We design your website.<br/>
              We are nerds with a visual eye. <br/> Contact us.</h2>
-            <button className='px-8 py-2 border-solid border border-black '>Learn more </button>
+            <div className='inline-flex items-center'>
+              <button className='px-2 py-1 border-solid border border-black inline-flex items-center'>
+                  <span>
+                    Learn more 
+                  </span>
+                  <MdKeyboardArrowDown size={20} className='ml-1' />
+              </button>
+            
+            </div>
+
         </div>
     </div>
   )
 }
 
 export default Hero 
-{/* <MdKeyboardArrowDown size={20} /> */}
