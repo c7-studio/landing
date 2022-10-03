@@ -8,5 +8,9 @@ html{
 }
 
 .custom-img{
-    background-image: url('../img/hero.png')
+    background-image: url('../public/hero1.png')
+}
+
+.custom-img-2{
+    background-image: url('../public/hero2.png')
 }
