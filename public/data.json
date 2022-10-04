@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "img": "/img_1.png",
+      "title": "Research",
+      "description": ""
+    },
+    {
+      "id": 2,
+      "img": "/img_2.png",
+      "title": "UX/UI",
+      "description": ""
+    },
+    {
+      "id": 3,
+      "img": "/img_3.png",
+      "title": "Web Design",
+      "description": ""
+    },
+    {
+      "id": 4,
+      "img": "/img_4.png",
+      "title": "Web Development",
+      "description": ""
+    }
+  ]
