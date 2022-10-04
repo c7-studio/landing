@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 const Hero = () => {
   const router = useRouter()
   return (
-    <div className='flex items-center justify-center h-screen  bg-fixed bg-cover custom-img'>
+    <div className='flex items-center justify-center h-screen bg-fixed bg-cover custom-img'>
         <div className='p-5 mt-12 text-black z-[3] '>
             <h2 className='text-6xl mb-4'>We design your website.<br/>
              We are nerds with a visual eye. <br/> Contact us.</h2>
