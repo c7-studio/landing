@@ -3,11 +3,11 @@ import Image from 'next/image'
 
 
 function ServiceItem({image, title}) {
-    const [isLoading, setLoading] = useState(true);
+  const [isLoading, setLoading] = useState(true);
 
   return (
-    <div className='group'>
-        <div className='aspect-w-1 aspect-h-1 xl:aspect-w-7 xl:aspect-h-8 w-full overflow-hidden bg-gray-200'>
+    <div className='group flex flex-col flex-nowrap justify-center justify-items-center items-center' >
+        <div className='aspect-w-1 aspect-h-1 xl:aspect-w-7 xl:aspect-h-8 w-full overflow-hidden'>
             <Image
                 src={image}
                 className= {isLoading ? 'grayscale-blur-2xl' : 'grayscale-0 blur-0'}
@@ -16,7 +16,7 @@ function ServiceItem({image, title}) {
                 objectFit="cover"
             />
         </div>
-        <h2 className='mx-24 my-2 w-32 border-solid border border-black p-1 text-sm text-center'>{title}</h2>
+        <h2 className='xs:mx-14 sm:mx-16 my-2 w-32 border-solid border border-black p-1 text-sm text-center'>{title}</h2>
     </div>
   )
 }
