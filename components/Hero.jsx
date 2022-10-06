@@ -10,16 +10,14 @@ const Hero = () => {
             <h2 className='text-6xl mb-4'>We design your website.<br/>
              We are nerds with a visual eye. <br/> Contact us.</h2>
             <div className='inline-flex items-center'>
-              <button className='px-2 py-1 border-solid border border-black inline-flex items-center' 
+              <button className='px-2 py-1 border-solid border border-black focus:outline-gray-400 inline-flex items-center hover:text-gray-600 hover:border-gray-600' 
               onClick={() => router.push('/#services', undefined, {scroll: false})}>
                   <span>
                     Learn more 
                   </span>
                   <MdKeyboardArrowDown size={20} className='ml-1' />
               </button>
-            
             </div>
-
         </div>
     </div>
   )

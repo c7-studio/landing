@@ -1,12 +1,22 @@
 import React from 'react'
 import FormContact from './FormContact'
+import Image from 'next/image';
+import Map from '../public/mapa.png';
 
 function Contact() {
   return (
     <div className='h-screen p-5' id="contact">
       <h2 className='text-6xl'>Contact Us</h2>
-      <FormContact />
-      <h5 className='flex flex-col justify-center'>Or e-mail us at <span className='underline'>c7studio.www@gmail.com</span></h5>
+      <div className='flex flex-row gap-x-16	'>
+        <FormContact />
+        <div className='basis-1/2 p-3'>
+          <Image
+            src={Map}
+            alt="Buenos Aires map"
+            
+          />
+        </div>
+      </div>
     </div>
   )
 }
