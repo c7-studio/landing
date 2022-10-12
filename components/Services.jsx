@@ -23,11 +23,10 @@ export const Services = () => {
   },[])
 
   return (
-    <div className='p-5'>
-        <div className='absolute' id="services"></div>
-            <h2 className='text-6xl'>Our Services</h2>
-          <div className='h-screen items-center flex flex-col justify-center'>
-            <div>
+    <div className='py-16' id="services">
+      <div className='p-5'>
+        <h2 className='text-6xl'>Our Services</h2>
+            <div className='items-center flex flex-col justify-center p-20'>
               <div className='flex'>
                 {list.map((item) => {
                   console.log(item)
