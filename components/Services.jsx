@@ -23,19 +23,19 @@ export const Services = () => {
   },[])
 
   return (
-    <div>
-        <div className='mb-20 bottom-1 absolute' id="services"></div>
-      <div className='h-screen items-center flex flex-col mt-20 '>
-        <h2 className='text-6xl'>Our Services</h2>
-        <div className='mt-10'>
-          <div className='flex'>
-            {list.map((item) => {
-              console.log(item)
-              return <ServiceItem key={item.id} image={item.img} title={item.title}/>
-            })
-            }
-          </div>
-        </div>
+    <div className='p-5'>
+        <div className='absolute' id="services"></div>
+            <h2 className='text-6xl'>Our Services</h2>
+          <div className='h-screen items-center flex flex-col justify-center'>
+            <div>
+              <div className='flex'>
+                {list.map((item) => {
+                  console.log(item)
+                  return <ServiceItem key={item.id} image={item.img} title={item.title}/>
+                })
+                }
+              </div>
+            </div>
       </div>
     </div>
   )

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
+import { useRouter } from 'next/router'
 
 const Navbar = () => {
 
@@ -34,7 +35,7 @@ const Navbar = () => {
             <img src="/logo.svg" alt="Logo" width='70px' height='auto'/>
             </Link>
             <ul className='hidden sm:flex'>
-                <li className='px-2 mx-3 hover:text-gray-600 '>
+                <li className='px-2 mx-3 hover:text-gray-600'>
                     <Link 
                     className='focus:outline-grey-400'
                     href='/#services'>
