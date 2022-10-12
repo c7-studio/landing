@@ -6,8 +6,8 @@ function ServiceItem({image, title}) {
   const [isLoading, setLoading] = useState(true);
 
   return (
-    <div className='flex flex-col justify-evenly border gap-14' >
-        <div className='aspect-w-1 aspect-h-1 xl:aspect-w-7 xl:aspect-h-8 '>
+    <div className='flex flex-col justify-evenly border mr-10' >
+        <div className='aspect-w-1 aspect-h-1 xl:aspect-w-7 xl:aspect-h-8  '>
             <Image
                 src={image}
                 className= {isLoading ? 'grayscale-blur-2xl' : 'grayscale-0 blur-0'}

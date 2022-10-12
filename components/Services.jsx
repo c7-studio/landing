@@ -26,10 +26,9 @@ export const Services = () => {
     <div className='py-16' id="services">
       <div className='p-5'>
         <h2 className='text-6xl'>Our Services</h2>
-            <div className='items-center flex flex-col justify-center p-20'>
+            <div className='items-center flex flex-col justify-center p-20 mt-10'>
               <div className='flex'>
                 {list.map((item) => {
-                  console.log(item)
                   return <ServiceItem key={item.id} image={item.img} title={item.title}/>
                 })
                 }
