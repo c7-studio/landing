@@ -6,7 +6,7 @@ function ServiceItem({image, title}) {
   const [isLoading, setLoading] = useState(true);
 
   return (
-    <div className='flex flex-col justify-evenly border mr-10 max-h-full max-w-4xl p-2' >
+    <div className='flex flex-col justify-evenly border mr-10 max-h-full max-w-[50%] p-2' >
         <div className=''>
             <Image
                 width={1200}
