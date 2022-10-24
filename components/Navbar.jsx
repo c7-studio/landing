@@ -62,13 +62,13 @@ const Navbar = () => {
             }>
             <ul>
                 <li className='p-4 text-4xl hover:text-gray-500'>
-                    <Link href='/#services'>Services</Link>
+                    <Link to='services'>Services</Link>
                 </li>
                 <li className='p-4 text-4xl hover:text-gray-500'>
-                    <Link href='/#projects'>Projects</Link>
+                    <Link to='projects'>Projects</Link>
                 </li>
                 <li className='p-4 text-4xl hover:text-gray-500'>
-                    <Link href='/#contact'>Contact</Link>
+                    <Link to='contact'>Contact</Link>
                 </li>
             </ul>
             </div>
