@@ -1,7 +1,7 @@
-import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { useRouter } from 'next/router'
+import { Link } from 'react-scroll/modules';
 
 const Navbar = () => {
 
@@ -36,21 +36,13 @@ const Navbar = () => {
             </Link>
             <ul className='hidden sm:flex'>
                 <li className='px-2 mx-3 hover:text-gray-600'>
-                    <Link 
-                    className='focus:outline-grey-400'
-                    href='/#services'>
-                        Services
-                    </Link>
+                    <Link className='focus:outline-grey-400 cursor-pointer' to="services" spy={true} smooth={true} offset={0} duration={500}>Services</Link>
                 </li>
                 <li className='px-2 mx-3 hover:text-gray-600 focus:outline-grey-400'>
-                    <Link 
-                    href='/#projects'>
-                    Projects
-                    </Link>
+                    <Link className='focus:outline-grey-400 cursor-pointer' to="projects" spy={true} smooth={true} offset={0} duration={500}>Projects</Link>
                 </li>
                 <li className='px-2 mx-3 hover:text-gray-600 hover:border-gray-600 focus:outline-grey-400 border-black border'>
-                    <Link 
-                    href='/#contact'>Contact</Link>
+                    <Link className='focus:outline-grey-400 cursor-pointer' to="contact" spy={true} smooth={true} offset={0} duration={500}>Contact</Link>
                 </li>
             </ul>
 
