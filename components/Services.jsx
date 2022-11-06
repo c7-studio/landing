@@ -23,11 +23,11 @@ export const Services = () => {
   },[])
 
   return (
-    <div className='py-16' id="services">
+    <div className='py-16 w-100' id="services">
       <div className='p-5'>
         <h2 className='text-6xl'>Our Services</h2>
-            <div className='items-center flex flex-col justify-center p-20 mt-10'>
-              <div className='flex'>
+            <div className='items-center flex justify-between mt-10 mx-auto'>
+              <div className='flex mx-auto'>
                 {list.map((item) => {
                   return <ServiceItem key={item.id} image={item.img} title={item.title}/>
                 })

@@ -6,24 +6,24 @@ import Link from 'next/link';
 
 function FormContact() {
   return (
-    <div className='py-12 basis-1/2 flex flex-col justify-around'>   
+    <div className='py-12 md:basis-1/2 flex flex-col justify-around px-0'>   
         <form className="flex flex-col">
             <label htmlFor="name" className="mb-2">Name</label>
-            <input className="mb-4 border-b-2 border-dashed border-black focus:outline-gray-400" 
+            <input className="mb-4  border-black focus:outline-gray-400" 
                 id="name"
                 name="name"
                 type="text"
                 autocomplete="name"
                 required/>
             <label htmlFor="email" className="mb-2">E-mail Address</label>
-            <input className="mb-4 border-b-2 border-dashed border-black focus:outline-gray-400" 
+            <input className="mb-4 border-black focus:outline-gray-400" 
                 id="email"
                 name="email"
                 type="text"
                 autocomplete="email"
                 required/>
             <label htmlFor="inquiry" className="mb-2">Inquiry</label>
-            <textarea className="mb-4 border-b-2 border-dashed border-black min-h-[100px] focus:outline-gray-400" 
+            <textarea className="mb-4 border-black min-h-[100px] focus:outline-gray-400" 
                 id="inquiry"
                 name="inquiry"
                 type="text"
@@ -39,16 +39,7 @@ function FormContact() {
                 </button>
             </div>
         </form>
-        <h5 className='flex flex-col justify-center justify-self-end focus:outline-gray-400'>
-            Or e-mail us at
-            <span className='underline focus:outline-gray-400'>
-                <Link 
-                className='focus:outline-gray-400'
-                href="mailto:c7studio.www@gmail.com"
-                >c7studio.www@gmail.com</Link>
-                
-            </span>
-        </h5>
+
 
     </div>
   )

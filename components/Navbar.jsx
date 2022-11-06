@@ -61,14 +61,14 @@ const Navbar = () => {
                     : 'sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-white text-center ease-in duration-300'
             }>
             <ul>
-                <li className='p-4 text-4xl hover:text-gray-500'>
-                    <Link to='services'>Services</Link>
+                <li className='cursor-pointer p-4 text-4xl hover:text-gray-500'>
+                    <Link onClick={handleNav} to='services'>Services</Link>
                 </li>
-                <li className='p-4 text-4xl hover:text-gray-500'>
-                    <Link to='projects'>Projects</Link>
+                <li className='cursor-pointer p-4 text-4xl hover:text-gray-500'>
+                    <Link onClick={handleNav} to='projects'>Projects</Link>
                 </li>
-                <li className='p-4 text-4xl hover:text-gray-500'>
-                    <Link to='contact'>Contact</Link>
+                <li className='cursor-pointer p-4 text-4xl hover:text-gray-500'>
+                    <Link onClick={handleNav} to='contact'>Contact</Link>
                 </li>
             </ul>
             </div>

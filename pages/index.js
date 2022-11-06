@@ -4,6 +4,8 @@ import Contact from '../components/Contact';
 import Hero from '../components/Hero';
 import { Projects } from '../components/Projects';
 import { Services } from '../components/Services';
+import Pie from '../components/Pie';
+
 
 
 export default function Home() {  
@@ -18,6 +20,7 @@ export default function Home() {
       <Services/>
       <Projects/>
       <Contact/>
+      <Pie/>
     </div>
   )
 }
