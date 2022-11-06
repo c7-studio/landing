@@ -19,7 +19,6 @@ function Contact() {
             />
             <h2>Located in Buenos Aires, Argentina</h2>
             <p>-34.606331798816704, -58.435075902603835</p>
-          </div>
           <h5 className='flex flex-col focus:outline-gray-400 mt-6'>
             Or e-mail us at
             <span className='underline focus:outline-gray-400'>
@@ -30,6 +29,7 @@ function Contact() {
                 
             </span>
         </h5>
+          </div>
         </div>
       </div>
     </div>

@@ -2,30 +2,68 @@ import React from 'react';
 import Image from 'next/image';
 import Map from '../public/mapa.png';
 import Link from 'next/link';
+import {useState} from 'react';
+import { send } from 'emailjs-com';
 
 
 function FormContact() {
+    const [toSend, setToSend] = useState({
+        from_name: '',
+        to_name: '',
+        message: '',
+        reply_to: '',
+      });
+      const [alert, setAlert] = useState(null);
+    
+    const onSubmit = (e) => {
+        e.preventDefault();
+        send(
+            'service_ijr1bmb',
+            'template_akwer7k',
+            toSend,
+            'eif9fAisD6xQWjpg5'
+          )
+            .then((response) => {
+              console.log('SUCCESS!', response.status, response.text);
+              setAlert(true)
+            })
+            .catch((err) => {
+              console.log('FAILED...', err);
+              setAlert(true)
+            });
+            };
+
+      const handleChange = (e) => {
+        setToSend({ ...toSend, [e.target.name]: e.target.value });
+      };
+    
   return (
     <div className='py-12 md:basis-1/2 flex flex-col justify-around px-0'>   
-        <form className="flex flex-col">
+        <form className="flex flex-col" onSubmit={onSubmit}>
             <label htmlFor="name" className="mb-2">Name</label>
             <input className="mb-4  border-black focus:outline-gray-400" 
                 id="name"
-                name="name"
+                onChange={handleChange}
+                name='from_name'
+                value={toSend.from_name}
                 type="text"
                 autocomplete="name"
                 required/>
             <label htmlFor="email" className="mb-2">E-mail Address</label>
             <input className="mb-4 border-black focus:outline-gray-400" 
                 id="email"
-                name="email"
+                name='reply_to'
+                value={toSend.reply_to}
+                onChange={handleChange}
                 type="text"
                 autocomplete="email"
                 required/>
             <label htmlFor="inquiry" className="mb-2">Inquiry</label>
             <textarea className="mb-4 border-black min-h-[100px] focus:outline-gray-400" 
                 id="inquiry"
-                name="inquiry"
+                name='message'
+                value={toSend.message}
+                onChange={handleChange}
                 type="text"
                 autocomplete="inquiry"
                 placeholder='Your message...'
@@ -39,6 +77,10 @@ function FormContact() {
                 </button>
             </div>
         </form>
+        {alert && <div className="p-4 mb-4 text-sm text-green-700 border border-green-700" role="alert">
+  Thank you! We will be in touch :)
+</div> }
+        
 
 
     </div>
@@ -46,7 +88,3 @@ function FormContact() {
 }
 
 export default FormContact
-
-
-{/* <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
-<textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your message..."></textarea> */}
