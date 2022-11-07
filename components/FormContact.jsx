@@ -38,7 +38,7 @@ function FormContact() {
       };
     
   return (
-    <div className='py-12 md:basis-1/2 flex flex-col justify-around px-0'>   
+    <div className='py-12 md:basis-1/2 flex flex-col justify-between px-0'>   
         <form className="flex flex-col" onSubmit={onSubmit}>
             <label htmlFor="name" className="mb-2">Name</label>
             <input className="mb-4  border-black focus:outline-gray-400" 

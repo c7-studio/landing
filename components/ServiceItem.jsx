@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-import Image from 'next/image';
 import { Card } from 'flowbite-react';
 
 function ServiceItem({image, title}) {
-  const [isLoading, setLoading] = useState(true);
 
   return (
 <div className="max-w-sm mx-2">
