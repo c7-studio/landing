@@ -1,7 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
-import Map from '../public/mapa.png';
-import Link from 'next/link';
 import {useState} from 'react';
 import { send } from 'emailjs-com';
 
@@ -38,7 +35,7 @@ function FormContact() {
       };
     
   return (
-    <div className='py-12 md:basis-1/2 flex flex-col justify-between px-0'>   
+    <div className='py-12 md:basis-1/2 flex flex-col px-0'>   
         <form className="flex flex-col" onSubmit={onSubmit}>
             <label htmlFor="name" className="mb-2">Name</label>
             <input className="mb-4  border-black focus:outline-gray-400" 
@@ -77,7 +74,7 @@ function FormContact() {
                 </button>
             </div>
         </form>
-        {alert && <div className="p-4 mb-4 text-sm text-green-700 border border-green-700" role="alert">
+        {alert && <div className="p-4 my-4 text-sm text-green-700 border border-green-700" role="alert">
   Thank you! We will be in touch :)
 </div> }
         
