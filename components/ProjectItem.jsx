@@ -2,11 +2,11 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 
 
-function ServiceItem({image, title}) {
+function ServiceItem({image, title, hasMargin}) {
   const [isLoading, setLoading] = useState(true);
 
   return (
-    <div className='flex flex-col justify-evenly border mr-10 max-h-full max-w-[50%] p-2' >
+    <div className='flex flex-col justify-evenly border max-h-full max-w-[49%] p-2' >
         <div className=''>
             <Image
                 width={1200}

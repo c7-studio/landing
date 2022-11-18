@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
-import { useRouter } from 'next/router'
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import { useRouter } from 'next/router';
 import { Link } from 'react-scroll/modules';
+import Image from 'next/image';
+import logoNuevo from '../public/logoNuevo.png';
 
 const Navbar = () => {
 
@@ -13,7 +15,7 @@ const Navbar = () => {
         setNav(!nav)
     }
 
-    useEffect(()=> {
+    useEffect(() => {
         const changeColor = () => {
             if(window.scrollY >= 90) {
                 setColor('#ffffff')
@@ -32,7 +34,7 @@ const Navbar = () => {
     <div style={{backgroundColor: `${color}`}}  className="fixed left-0 top-0 w-full z-10 ease-in duration-300">
         <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-black">
             <Link href='/'>
-            <img src="/logo.svg" alt="Logo" width='70px' height='auto'/>
+            <Image src={logoNuevo} alt="Logo" width={66} height={51} />
             </Link>
             <ul className='hidden sm:flex'>
                 <li className='px-2 mx-3 hover:text-gray-600'>

@@ -38,7 +38,7 @@ function FormContact() {
     <div className='py-12 md:basis-1/2 flex flex-col px-0'>   
         <form className="flex flex-col" onSubmit={onSubmit}>
             <label htmlFor="name" className="mb-2">Name</label>
-            <input className="mb-4  border-black focus:outline-gray-400" 
+            <input className="mb-4  border-black focus:ring-gray-400 focus:border-none" 
                 id="name"
                 onChange={handleChange}
                 name='from_name'
@@ -47,7 +47,7 @@ function FormContact() {
                 autocomplete="name"
                 required/>
             <label htmlFor="email" className="mb-2">E-mail Address</label>
-            <input className="mb-4 border-black focus:outline-gray-400" 
+            <input className="mb-4 border-black focus:ring-gray-400 focus:border-none" 
                 id="email"
                 name='reply_to'
                 value={toSend.reply_to}
@@ -56,7 +56,7 @@ function FormContact() {
                 autocomplete="email"
                 required/>
             <label htmlFor="inquiry" className="mb-2">Inquiry</label>
-            <textarea className="mb-4 border-black min-h-[100px] focus:outline-gray-400" 
+            <textarea className="mb-4 border-black min-h-[100px] focus:ring-gray-400 focus:border-none" 
                 id="inquiry"
                 name='message'
                 value={toSend.message}

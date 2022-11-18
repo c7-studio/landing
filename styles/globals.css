@@ -14,3 +14,11 @@ html{
 .custom-img-2{
     background-image: url('../public/hero2.png')
 }
+
+.custom-img-3{
+    background-image: url('../public/bgXs.png')
+}
+
+.custom-img-4{
+    background-image: url('../public/bgMobileXs.png')
+}
