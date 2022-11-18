@@ -27,7 +27,7 @@ export const Services = () => {
       <div className='p-5'>
         <h2 className='text-6xl'>Our Services</h2>
             <div className='items-center flex justify-between mt-10 mx-auto'>
-              <div className='flex mx-auto'>
+              <div className='flex-auto sm:flex mx-auto'>
                 {list.map((item) => {
                   return <ServiceItem key={item.id} image={item.img} title={item.title}/>
                 })

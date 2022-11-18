@@ -4,7 +4,7 @@ import { Card } from 'flowbite-react';
 function ServiceItem({image, title}) {
 
   return (
-<div className="max-w-sm mx-2">
+<div className="max-w-sm mx-2 mt-2 sm:mt-0">
   <div>
     <Card imgSrc={image} className=' flex flex-col border border-black shadow-none rounded-none'>
       </Card>
@@ -30,22 +30,3 @@ function ServiceItem({image, title}) {
   
   export default ServiceItem
   
-  {/* <div className='aspect-w-1 aspect-h-1 xl:aspect-w-7 xl:aspect-h-8'> */}
-
-  // <div>
-  //   <div className='border bg-grey border-black border-solid mr-10' >
-  //       <div className='aspect-w-1 aspect-h-1 xl:aspect-w-7 xl:aspect-h-8'>
-  //           <Image
-  //               src={image}
-  //               className= {isLoading ? 'grayscale-blur-2xl' : 'grayscale-0 blur-0'}
-  //               onLoadingComplete={() => setLoading(false)}
-  //               layout="fill" // required
-  //               objectFit="cover"
-  //           />
-  //       </div>
-        
-  //   </div>
-  //   <div>
-  //     <h2 className='xs:mx-14 sm:mx-16 my-2 w-32 border-solid border border-black p-1 text-sm text-center hover:text-gray-600 cursor-pointer'>{title}</h2>
-  //   </div>
-  // </div>
