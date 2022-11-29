@@ -25,19 +25,14 @@ export const Services = () => {
   return (
     <div className='py-16 w-100' id="services">
       <div className='p-5'>
-        <h2 className='text-6xl'>Our Services</h2>
-<<<<<<< HEAD
+        <h2 className='text-6xl text-center sm:text-left pl-2'>Our Services</h2>
             <div className='items-center flex justify-between mt-4 mx-auto'>
-              <div className='flex mx-auto'>
-=======
-            <div className='items-center flex justify-between mt-10 mx-auto'>
               <div className='flex-auto sm:flex mx-auto'>
->>>>>>> c6d9c029cd418505db119ba13738cf98b277d2e6
                 {list.map((item) => {
-                  return <ServiceItem key={item.id} image={item.img} title={item.title}/>
+                  return <ServiceItem key={item.id} image={item.img} title={item.title} description={item.description}/>
                 })
                 }
-              </div>
+              </div> 
             </div>
       </div>
     </div>

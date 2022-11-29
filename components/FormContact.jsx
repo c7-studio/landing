@@ -35,7 +35,7 @@ function FormContact() {
       };
     
   return (
-    <div className='py-12 md:basis-1/2 flex flex-col px-0'>   
+    <div className='py-12 md:basis-1/2 flex flex-col px-0 w-full'>   
         <form className="flex flex-col" onSubmit={onSubmit}>
             <label htmlFor="name" className="mb-2">Name</label>
             <input className="mb-4  border-black focus:ring-gray-400 focus:border-none" 
@@ -44,7 +44,7 @@ function FormContact() {
                 name='from_name'
                 value={toSend.from_name}
                 type="text"
-                autocomplete="name"
+                autoComplete="name"
                 required/>
             <label htmlFor="email" className="mb-2">E-mail Address</label>
             <input className="mb-4 border-black focus:ring-gray-400 focus:border-none" 
@@ -53,7 +53,7 @@ function FormContact() {
                 value={toSend.reply_to}
                 onChange={handleChange}
                 type="text"
-                autocomplete="email"
+                autoComplete="email"
                 required/>
             <label htmlFor="inquiry" className="mb-2">Inquiry</label>
             <textarea className="mb-4 border-black min-h-[100px] focus:ring-gray-400 focus:border-none" 
@@ -62,21 +62,18 @@ function FormContact() {
                 value={toSend.message}
                 onChange={handleChange}
                 type="text"
-                autocomplete="inquiry"
+                autoComplete="inquiry"
                 placeholder='Your message...'
                 required/>
             <div className='flex justify-center items-center gap-x-10 my-2'>
                 <button type="submit" className="h-min w-min px-4 py-1 font-bold text-black border border-black hover:text-gray-600 hover:border-gray-600 focus:outline-gray-400">
                 Send
                 </button>
-                <button type="reset" className="h-min w-min px-4 py-1 font-bold text-black border border-black hover:text-gray-600 hover:border-gray-600 focus:outline-gray-400">
-                    Reset
-                </button>
             </div>
         </form>
         {alert && <div className="p-4 my-4 text-sm text-green-700 border border-green-700" role="alert">
   Thank you! We will be in touch :)
-</div> }
+  </div> }
         
 
 

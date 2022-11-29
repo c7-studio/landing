@@ -3,9 +3,14 @@ import FormContact from './FormContact'
 import Image from 'next/image';
 import Map from '../public/mapa.png';
 import Link from 'next/link';
+import { useState } from 'react';
 
 
 function Contact() {
+
+  const [maps, setMaps] = useState({Map});
+
+
   return (
     <div className='py-16' id="contact">
       <div className='h-screen p-5 '>

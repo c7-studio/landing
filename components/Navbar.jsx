@@ -22,7 +22,7 @@ const Navbar = () => {
                 setTextColor('#000000')
             }
             else {
-                setColor('transparent')
+                setColor('transparent') 
                 setTextColor('white')
             }
         }
@@ -59,7 +59,7 @@ const Navbar = () => {
             {/* Mobile Menu */}
             <div className={
                 nav
-                    ? 'sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-white text-center ease-in duration-300'
+                    ? 'sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-[url(../public/bgXs.png)] text-center ease-in duration-300'
                     : 'sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-white text-center ease-in duration-300'
             }>
             <ul>
