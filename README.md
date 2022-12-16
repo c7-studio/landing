@@ -1,2 +1,2 @@
-## C7_STUDIO Landing
+## C7 STUDIO Landing
 Stack: React, Next.js, Tailwind CSS
