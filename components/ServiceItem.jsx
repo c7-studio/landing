@@ -17,12 +17,6 @@ function ServiceItem({image, title, description}) {
     <p className="font-normal text-gray-700 dark:text-gray-400 mb-3">
       {description}
     </p>
-    
-    <button className='px-2 py-1 border-solid border border-black focus:outline-gray-400 inline-flex items-center hover:text-gray-600 hover:border-gray-600'>
-                  <span>
-                    Learn more 
-                  </span>
-              </button>
   </div>
 </div>
     )
