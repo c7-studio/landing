@@ -8,8 +8,19 @@ export const Projects = () => {
       <div className='max-h-full max-w-full'>
         <h2 className='text-6xl px-5 pt-3 '>Latest Projects</h2>
         <div className='p-5 sm:flex block mx-auto'>
-          <ProjectItem image="/img_1.png" title="Kostume"/>
-          <ProjectItem image="/img_1.png" title="Vegas"/>
+          <ProjectItem 
+          image="/kostume_cover.png" 
+          title="Kostume" 
+          skill="Web design & Development"
+          description="We designed and developed this E-commerce for fashion wear 'Kostume' on Tienda Nube"
+          />
+          <ProjectItem 
+          image="/kostume_cover.png" 
+          title="Vegas" 
+          skill="Web design & Development"
+          description="We designed and developed this E-commerce for fashion wear 'Kostume' on Tienda Nube"
+          />
+          
         </div>
       </div>
     </div>
