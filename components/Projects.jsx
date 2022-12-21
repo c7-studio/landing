@@ -12,15 +12,15 @@ export const Projects = () => {
           image="/kostume_cover.png" 
           title="Kostume" 
           skill="Web design & Development"
-          description="We designed and developed this E-commerce for fashion wear 'Kostume' on Tienda Nube"
+          description="We designed and developed this E-commerce for fashion wear 'Kostume' on Tienda Nube. ASD FA SDF SADF AS SF F "
           link="https://www.behance.net/gallery/155218353/Kostueme"
           /> 
           <ProjectItem 
           image="/tdt_cover.png" 
-          title="Templo de Tierra" 
+          title="Templo de Tierra"  
           skill="Web design & Development"
           description="We designed and developed this landing site for bioconstruction boutique hotel 'Templo de Tierra', using Next.Js, Tailwind CSS and design in Figma"
-          link="https://www.behance.net/gallery/155218353/Kostueme"
+          link=""
           />           
         </div>
       </div>
