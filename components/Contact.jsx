@@ -12,7 +12,7 @@ function Contact() {
 
 
   return (
-    <div className='py-16' id="contact">
+    <div className='pt-16' id="contact">
       <div className='h-screen p-5 '>
         <h2 className='text-6xl'>Contact Us</h2>
         <div className='flex flex-col justify-start md:flex-row gap-x-16	items-center'>

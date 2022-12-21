@@ -31,8 +31,8 @@ const Navbar = () => {
     
 
   return (
-    <div style={{backgroundColor: `${color}`}}  className="fixed left-0 top-0 w-full z-10 ease-in duration-300">
-        <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-black">
+    <div style={{backgroundColor: `${color}`}}  className="fixed left-0 top-0 w-full z-50 ease-in duration-300">
+        <div className="max-w-[1240px] m-auto flex justify-between items-center p-2 text-black">
             <Link href='/'>
             <Image src={logoNuevo} alt="Logo" width={66} height={51} />
             </Link>

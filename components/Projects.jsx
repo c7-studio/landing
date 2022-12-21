@@ -4,7 +4,7 @@ import ProjectItem from './ProjectItem'
 
 export const Projects = () => {
   return (
-    <div className='py-16 mx-auto' id="projects">
+    <div className='pt-16 mx-auto' id="projects">
       <div className='max-h-full max-w-full'>
         <h2 className='text-6xl px-5 pt-3 '>Latest Projects</h2>
         <div className='p-5 sm:flex block mx-auto'>
@@ -12,7 +12,7 @@ export const Projects = () => {
           image="/kostume_cover.png" 
           title="Kostume" 
           skill="Web design & Development"
-          description="We designed and developed this E-commerce for fashion wear 'Kostume' on Tienda Nube. ASD FA SDF SADF AS SF F "
+          description="We designed and developed this E-commerce for fashion wear 'Kostume' on Tienda Nube*. We used Figma for design, and customized a template in *TN, which uses Twig, a framework of PHP "
           link="https://www.behance.net/gallery/155218353/Kostueme"
           /> 
           <ProjectItem 
