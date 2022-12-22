@@ -1,26 +1,26 @@
 [
-    {
-      "id": 1,
-      "img": "/img_1.png",
-      "title": "Research",
-      "description": "We will initially research into your project so we know what is best for it."
-    },
-    {
-      "id": 2,
-      "img": "/img_2.png",
-      "title": "UX/UI",
-      "description": "We will initially research into your project so we know what is best for it."
-    },
-    {
-      "id": 3,
-      "img": "/img_3.png",
-      "title": "Web Design",
-      "description": "We will initially research into your project so we know what is best for it."
-    },
-    {
-      "id": 4,
-      "img": "/img_4.png",
-      "title": "Web Development",
-      "description": "We will initially research into your project so we know what is best for it."
-    }
-  ]
+  {
+    "id": 1,
+    "img": "/img_1.png",
+    "title": "Research",
+    "description": "We will initially research into your project so we know what is best for it. "
+  },
+  {
+    "id": 2,
+    "img": "/img_2.png",
+    "title": "UX/UI",
+    "description": "We focus on improving user experience, creating intuitive and immersive digital products."
+  },
+  {
+    "id": 3,
+    "img": "/img_3.png",
+    "title": "Web Design",
+    "description": "We will work on a visual identity according to the product or brand and share it with the world. We attach great importance to a good mixture of consistency and creative diversity. "
+  },
+  {
+    "id": 4,
+    "img": "/img_4.png",
+    "title": "Web Development",
+    "description": "We build functional and responsive web and mobile apps, using the latest technologies."
+  }
+]
