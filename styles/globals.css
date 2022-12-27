@@ -7,6 +7,10 @@ html{
     font-family: "VT323", sans-serif;
 }
 
+.scroll-top {
+    scroll-padding-top: 5rem;
+}
+
 .custom-img{
     background-image: url('../public/hero.png')
 }

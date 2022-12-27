@@ -1,3 +1,4 @@
+import Marquee from "react-fast-marquee";
 import React, { useState, useEffect } from 'react';
 import ServiceItem from './ServiceItem';
 import {MdKeyboardArrowDown} from 'react-icons/md';
@@ -26,8 +27,10 @@ export const Services = () => {
   },[])
 
   return (
-    <div className='pt-20 w-full' id="services">
-      <div className='p-5'>
+
+    <div className='w-full animate-fade-in-down z-0 pt-12' id="services">
+      
+      <div className='px-5 py-1'>
         <h2 className='text-6xl text-center sm:text-left pl-2'>Our Services</h2>
         <div className='items-center flex justify-between mt-4 mx-auto'>
           <div className='flex-auto sm:flex mx-auto'>
@@ -36,11 +39,11 @@ export const Services = () => {
               })}
           </div>
         </div>
-        <button onClick={() => router.push('/#projects', undefined, {scroll: false})} className='mx-auto flex px-2 py-1 border-solid border border-black focus:outline-gray-400  items-center hover:text-gray-600 hover:border-gray-600 animate-pulse '>
+      </div>
+        <button onClick={() => router.push('/#projects', undefined, {scroll: false})} className='mx-auto flex px-2 py-1 border-solid border border-black focus:outline-gray-400 items-center hover:text-gray-600 hover:border-gray-600 animate-pulse '>
                 See our latest projects
                 <MdKeyboardArrowDown size={20} className='ml-1' />
             </button>
-      </div>
     </div>
   )
 }

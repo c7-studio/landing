@@ -6,7 +6,8 @@ function ServiceItem({image, title, description}) {
   return (
 <div className="max-w-sm sm:w-1/4 sm:mx-2 mt-2 sm:mt-0 mx-auto mb-6">
   <div>
-    <Card imgSrc={image} className='flex flex-col border border-black shadow-none rounded-none'>
+    <Card 
+    imgSrc={image} className='flex flex-col border border-black shadow-none rounded-none pt-3'>
       </Card>
   </div>
   <div>

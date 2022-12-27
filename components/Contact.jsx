@@ -12,12 +12,12 @@ function Contact() {
 
 
   return (
-    <div className='pt-16' id="contact">
+    <div className='pt-12' id="contact">
       <div className='h-screen p-5 '>
         <h2 className='text-6xl'>Contact Us</h2>
-        <div className='flex flex-col justify-start md:flex-row gap-x-16	items-center'>
+        <div className='flex flex-col md:flex-row items-center justify-between'>
           <FormContact />
-          <div className='basis-1/2'>
+          <div className='flex flex-col justify-center md:pr-40'>
             <Image
               src={Map}
               alt="Buenos Aires map"

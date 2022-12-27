@@ -31,9 +31,9 @@ const Navbar = () => {
     
 
   return (
-    <div style={{backgroundColor: `${color}`}}  className="fixed left-0 top-0 w-full z-50 ease-in duration-300">
-        <div className="max-w-[1240px] m-auto flex justify-between items-center p-2 text-black">
-            <Link href='/'>
+    <div style={{backgroundColor: `${color}`}}  className="fixed left-0 top-0 w-full z-50 ease-in duration-300 items-center">
+        <div className="max-w-[1400px] m-auto flex justify-between items-center px-5 py-1 text-black">
+            <Link href='/' to='hero'>
             <Image src={logoNuevo} alt="Logo" width={66} height={51} />
             </Link>
             <ul className='hidden sm:flex'>
