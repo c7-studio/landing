@@ -9,15 +9,12 @@ import { FBXLoader } from 'three/examples/jsm/loaders/FBXLoader';
 function Scene() {
   //TODO: fix URL
   //TODO: limit pan on OrbitControls
-  
+
   const obj = useLoader(FBXLoader, 'http://localhost:3000/hero-txt.fbx')
   return <Canvas
       camera={{ position: [0, 0, 1.5] }}>
-      <ambientLight intensity={0.9} />
-      <pointLight position={[10, -10, 0]} intensity={0.5} />
-      <pointLight position={[0, 10, 0]} intensity={0.5} />
-      <pointLight position={[-10, 0, 0]} intensity={0.5} />
-      <primitive object={obj} scale={0.0005} />
+      <directionalLight position={[1, 2, 2]} intensity={200} />
+      <primitive object={obj} scale={0.0005} dispose={null} />
       <OrbitControls/>
     </Canvas>
 };
