@@ -2,9 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    button {
+       @apply bg-white hover:bg-black hover:text-white hover:border-white
+    }
+}
+
+
 html{
     scroll-behavior: smooth;
     font-family: "VT323", sans-serif;
+}
+
+.scroll-top {
+    scroll-padding-top: 5rem;
 }
 
 .custom-img{
@@ -22,3 +33,4 @@ html{
 .custom-img-4{
     background-image: url('../public/bgMobileXs.png')
 }
+
