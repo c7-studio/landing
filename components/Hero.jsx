@@ -8,6 +8,8 @@ import { FBXLoader } from 'three/examples/jsm/loaders/FBXLoader';
 
 function Scene() {
   //TODO: fix URL
+  //TODO: limit pan on OrbitControls
+  
   const obj = useLoader(FBXLoader, 'http://localhost:3000/hero-txt.fbx')
   return <Canvas
       camera={{ position: [0, 0, 1.5] }}>
@@ -19,7 +21,6 @@ function Scene() {
       <OrbitControls/>
     </Canvas>
 };
-
 
 const Hero = () => {
   const router = useRouter();
@@ -44,9 +45,9 @@ const Hero = () => {
             <span className="">Learn more</span>
             <MdKeyboardArrowDown size={20} className="ml-1" />
           </button>
-            </div>
         </div>
-    </div>
+        </div>
+      </div>
   );
 };
 
