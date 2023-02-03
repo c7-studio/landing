@@ -23,7 +23,6 @@ const Hero = () => {
   const router = useRouter();
   return (
     <div className="flex items-center justify-center h-screen bg-fixed bg-cover bg-center mb-2">
-        <Scene className="w-full h-[200px]"/>
         <div className="p-5 mt-12 text-black z-[3] max-w-[920px] mx-auto">
         <h2 className="text-7xl mb-4 animate-fade-in-down duration-500 leading-[3.2rem]">
           C7 Studio is a creative agency based on collaboration.
@@ -44,6 +43,7 @@ const Hero = () => {
           </button>
         </div>
         </div>
+            <Scene className="w-full h-[200px]"/>
       </div>
   );
 };

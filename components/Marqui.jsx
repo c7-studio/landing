@@ -10,7 +10,7 @@ const Marqui = () => {
         direction="right"
         speed={90}
         className="text-9xl"
-      >C7 STUDIO * DESIGN & DEVELOPMENT * C7 STUDIO * DESIGN & DEVELOPMENT * C7
+      > C7 STUDIO * DESIGN & DEVELOPMENT * C7 STUDIO * DESIGN & DEVELOPMENT * C7
         STUDIO * DESIGN & DEVELOPMENT * <span className="ml-2"> </span>
       </Marquee>
     </div>
