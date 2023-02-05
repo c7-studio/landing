@@ -9,8 +9,8 @@ function Scene() {
   const myMesh = useRef();
 
   useFrame(({ clock }) => {
-    const a = clock.getElapsedTime();
-    myMesh.current.rotation.x = a;
+    const a = clock.getElapsedTime() /2;
+    myMesh.current.rotation.z = a;
   })
   
   const obj = useFBX('c7-v2.fbx')
