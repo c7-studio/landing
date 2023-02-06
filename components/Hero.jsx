@@ -1,25 +1,25 @@
-import React from "react";
+import React, { useRef } from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { useRouter } from "next/router";
-import { useLoader } from '@react-three/fiber';
+import { useFrame } from '@react-three/fiber';
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls, useFBX } from "@react-three/drei";
-import { FBXLoader } from 'three/examples/jsm/loaders/FBXLoader';
+import { OrbitControls, PerspectiveCamera, useFBX } from "@react-three/drei";
 
 function Scene() {
-  //TODO: fix URL
-  //TODO: limit pan on OrbitControls
+  const myMesh = useRef();
+
+  useFrame(({ clock }) => {
+    const a = clock.getElapsedTime() /2;
+    myMesh.current.rotation.z = a;
+  })
   
-  const obj = useLoader(FBXLoader, 'http://localhost:3000/hero-txt.fbx')
-  return <Canvas
-      camera={{ position: [0, 0, 1.5] }}>
-      <ambientLight intensity={0.9} />
-      <pointLight position={[10, -10, 0]} intensity={0.5} />
-      <pointLight position={[0, 10, 0]} intensity={0.5} />
-      <pointLight position={[-10, 0, 0]} intensity={0.5} />
-      <primitive object={obj} scale={0.0005} />
+  const obj = useFBX('c7-v2.fbx')
+  return <mesh ref={myMesh}>
+      <PerspectiveCamera makeDefault fov={75} position={[0, 0, 1.5]}/>
+      <directionalLight position={[1, 2, 2]} intensity={200} />
+      <primitive object={obj} scale={0.0005} dispose={null} />
       <OrbitControls/>
-    </Canvas>
+    </mesh>
 };
 
 const Hero = () => {
@@ -46,7 +46,9 @@ const Hero = () => {
           </button>
         </div>
         </div>
-            <Scene className="w-full h-[200px]"/>
+        <Canvas className="w-full h-[200px]">
+          <Scene/>
+        </Canvas>
       </div>
   );
 };
