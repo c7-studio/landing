@@ -27,7 +27,7 @@ const Hero = () => {
   return (
     <div className="flex items-center justify-center h-screen bg-fixed bg-cover bg-center mb-2">
         <div className="p-5 mt-12 text-black z-[3] max-w-[920px] mx-auto">
-        <h2 className="text-7xl mb-4 animate-fade-in-down duration-500 leading-[3.2rem]">
+        <h2 className="text-7xl mb-4 animate-fade-in-down duration-500 leading-[3.5rem]">
           C7 Studio is a creative agency based on collaboration.
         </h2>
         <p className="text-2xl mb-4 animate-fade-in-down duration-500">

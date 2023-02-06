@@ -37,7 +37,7 @@ const Navbar = () => {
           <Image src={logoNuevo} alt="Logo" width={66} height={51} />
         </Link>
         <ul className="hidden sm:flex">
-          <li className="px-2 mx-3 hover:text-gray-600">
+          <li className="px-2 mx-3 hover:text-gray-600">  
             <Link
               className="focus:outline-grey-400 cursor-pointer"
               to="services"
