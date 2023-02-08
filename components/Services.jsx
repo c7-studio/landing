@@ -33,7 +33,7 @@ export const Services = () => {
       <div className="px-5 py-1">
         <h2 className="text-6xl text-center sm:text-left pl-2">Our Services</h2>
         <div className="items-center flex justify-between mt-4 mx-auto">
-          <div className="flex-auto sm:flex mx-auto">
+        <div className="max-w-full flex-col flex md:flex-row md:justify-between mx-auto">
             {list.map((item) => {
               return (
                 <ServiceItem
