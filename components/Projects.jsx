@@ -6,7 +6,7 @@ export const Projects = () => {
   return (
     <div className="mx-auto scroll-top pt-12" id="projects">
       <div className="max-h-full max-w-full">
-        <h2 className="text-6xl px-5 pt-3 ">Latest Projects</h2>
+        <h2 className="text-center md:text-left text-6xl px-5 pt-3 ">Latest Projects</h2>
         <div className="p-5 sm:flex block mx-auto">
           <ProjectItem
             image="/kostume_cover.png"
