@@ -8,16 +8,15 @@ import { OrbitControls, PerspectiveCamera, useFBX } from "@react-three/drei";
 function Scene() {
   const myMesh = useRef();
 
-  // useFrame(({ clock }) => {
-  //   const a = clock.getElapsedTime() /2;
-  //   myMesh.current.rotation.y = a;
-  // })
+  useFrame(({ clock }) => {
+    const a = clock.getElapsedTime() /2;
+    myMesh.current.rotation.y = a;
+  });
   
   const obj = useFBX('c7-v2.fbx')
   return <mesh ref={myMesh}>
-      <PerspectiveCamera makeDefault fov={75} position={[0, 0, 1.5]}/>
-      <directionalLight position={[2, 2, 2]} intensity={100} />
-      <primitive object={obj} scale={0.0005} dispose={null} />
+      <spotLight intensity={10} />
+      <primitive object={obj} scale={0.0022} dispose={null} />
       <OrbitControls/>
     </mesh> 
 };
@@ -26,8 +25,8 @@ const Hero = () => {
   const router = useRouter();
   return (
       <div className="flex flex-col md:flex-row items-center justify-center h-screen bg-fixed bg-cover bg-center mb-2 mx-auto">
-          <div className="p-5 mt-12 text-black z-[3] max-w-[920px] mx-auto">
-          <h2 className="text-6xl text-center md:text-left md:text-7xl my-8 md:mb-4 animate-fade-in-down duration-500 leading-[3.2rem]">
+          <div className="p-5 text-black z-[3] max-w-[920px] mx-auto">
+          <h2 className="text-6xl text-center md:text-left my-8 md:mb-4 animate-fade-in-down duration-500 leading-[3.2rem] mt-24 md:mt-0">
             C7 Studio is a creative agency based on collaboration.
           </h2>
           <p className="text-center md:text-left text-2xl mb-8 md:mb-4 animate-fade-in-down duration-800">
