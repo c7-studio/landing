@@ -8,6 +8,7 @@ import logoNuevo from "../public/logoNuevo.png";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [color, setColor] = useState("transparent");
+  const [border, setBorder] = useState("0px");
   const [textColor, setTextColor] = useState("white");
 
   const handleNav = () => {
@@ -16,12 +17,14 @@ const Navbar = () => {
 
   useEffect(() => {
     const changeColor = () => {
-      if (window.scrollY >= 90) {
+      if (window.scrollY >= 40) {
         setColor("#ffffff");
         setTextColor("#000000");
+        setBorder("1px");
       } else {
         setColor("transparent");
-        setTextColor("white");
+        setTextColor("white");  
+        setBorder("0px")
       }
     };
     window.addEventListener("scroll", changeColor);
@@ -32,12 +35,12 @@ const Navbar = () => {
       style={{ backgroundColor: `${color}` }}
       className="fixed left-0 top-0 w-full z-50 ease-in duration-300 items-center"
     >
-      <div className="max-w-[1720px] mx-auto flex justify-between items-center px-5 py-1 text-black">
+      <div style={{ borderWidth: `${border}` }} className="max-w-[1720px] mx-auto flex justify-between items-center px-5 py-1 pt-3 text-black border-b-black transition duration-1000	">
         <Link href="/" to="hero">
           <Image src={logoNuevo} alt="Logo" width={66} height={51} />
         </Link>
         <ul className="hidden sm:flex">
-          <li className="px-2 mx-3 hover:text-gray-600">  
+          <li className="px-2 ml-4 hover:text-gray-600">  
             <Link
               className="focus:outline-grey-400 cursor-pointer"
               to="services"
@@ -49,7 +52,7 @@ const Navbar = () => {
               Services
             </Link>
           </li>
-          <li className="px-2 mx-3 hover:text-gray-600 focus:outline-grey-400">
+          <li className="px-2 ml-4 hover:text-gray-600 focus:outline-grey-400">
             <Link
               className="focus:outline-grey-400 cursor-pointer"
               to="projects"
@@ -61,7 +64,7 @@ const Navbar = () => {
               Projects
             </Link>
           </li>
-          <li className="px-2 mx-3 hover:text-gray-600 hover:border-gray-600 focus:outline-grey-400 border-black border">
+          <li className="px-2 ml-4 hover:text-gray-600 hover:border-gray-600 focus:outline-grey-400 border-black border">
             <Link
               className="focus:outline-grey-400 cursor-pointer"
               to="contact"

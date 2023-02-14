@@ -7,9 +7,9 @@ import { useState } from "react";
 
 function Contact() {
   return (
-    <div className="pt-12 mb-10" id="contact">
+    <div className="pt-12 mb-24" id="contact">
       <div className="h-screen p-5 ">
-        <h2 className="text-6xl">Contact Us</h2>
+        <h2 className="text-6xl text-center md:text-left">Contact Us</h2>
         <div className="flex flex-col md:flex-row items-center justify-between">
           <FormContact />
           <div className="flex flex-col justify-center md:pr-40">
