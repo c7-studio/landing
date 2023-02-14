@@ -1,11 +1,22 @@
 import Marquee from "react-fast-marquee";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import ServiceItem from "./ServiceItem";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { useRouter } from "next/router";
+import { motion, useScroll, MotionValue, useTransform, useSpring } from "framer-motion";
 
 export const Services = () => {
   const router = useRouter();
+  const MotionItem = motion(ServiceItem);
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
+
+
 
   const [list, setList] = useState([]);
 
@@ -33,15 +44,20 @@ export const Services = () => {
       <div className="px-5 py-1">
         <h2 className="text-6xl text-center sm:text-left pl-2">Our Services</h2>
         <div className="items-center flex justify-between mt-4 mx-auto">
-        <div className="max-w-full flex-col flex md:flex-row md:justify-between mx-auto">
-            {list.map((item) => {
+        <div className="max-w-full flex-col flex md:flex-row md:justify-between mx-auto" ref={ref}>
+            {list.map((item, i) => {
               return (
-                <ServiceItem
-                  key={item.id}
-                  image={item.img}
-                  title={item.title}
-                  description={item.description}
-                />
+                  <MotionItem
+                    style={{ scaleX }}
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}                  
+                    key={item.id}
+                    itemKey={i}
+                    image={item.img}
+                    title={item.title}
+                    description={item.description}
+                  />
               );
             })}
           </div>
