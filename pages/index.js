@@ -4,6 +4,7 @@ import Contact from "../components/Contact";
 import Hero from "../components/Hero";
 import Marqui from "../components/Marqui";
 import Marqui2 from "../components/Marqui2";
+import Medal from "../components/Medal";
 import { Projects } from "../components/Projects";
 import { Services } from "../components/Services";
 
@@ -25,6 +26,9 @@ export default function Home() {
       <Projects />
       <Marqui2 />
       <Contact />
+      <Medal text='C7 STUDIO DESIGN AND DEVELOPMENT *'>
+        <h3 className="text-9xl">*</h3>
+      </Medal>
     </div>
   );
 }

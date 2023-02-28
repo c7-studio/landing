@@ -7,7 +7,7 @@ import { useState } from "react";
 
 function Contact() {
   return (
-    <div className="pt-12 mb-24" id="contact">
+    <div className="pt-12" id="contact">
       <div className="h-screen p-5 ">
         <h2 className="text-6xl text-center md:text-left">Contact Us</h2>
         <div className="flex flex-col md:flex-row items-center justify-between">

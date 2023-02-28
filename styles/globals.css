@@ -8,7 +8,6 @@
     }
 }
 
-
 html{
     scroll-behavior: smooth;
     font-family: "VT323", sans-serif;
@@ -34,3 +33,22 @@ html{
     background-image: url('../public/bgMobileXs.png')
 }
 
+.spinning-text{
+    animation: spin 50s linear infinite;
+}
+
+.spinning-text span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform-origin: 0 300px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
