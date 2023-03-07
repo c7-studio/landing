@@ -3,13 +3,13 @@ import FormContact from "./FormContact";
 import Image from "next/image";
 import Map from "../public/mapa.png";
 import Link from "next/link";
-import { useState } from "react";
+import AnimatedTitle from "../utils/AnimatedTitle";
 
 function Contact() {
   return (
     <div className="pt-12" id="contact">
       <div className="h-screen p-5 ">
-        <h2 className="text-6xl text-center md:text-left">Contact Us</h2>
+        <AnimatedTitle text="Contact Us" customStyle="text-6xl text-center md:text-left"/>
         <div className="flex flex-col md:flex-row items-center justify-between">
           <FormContact />
           <div className="flex flex-col justify-center md:pr-40">

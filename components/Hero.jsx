@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import { useFrame } from '@react-three/fiber';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, PerspectiveCamera, useFBX } from "@react-three/drei";
+import AnimatedTitle from "../utils/AnimatedTitle";
 
 function Scene() {
   const myMesh = useRef();
