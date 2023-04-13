@@ -26,9 +26,6 @@ export default function Home() {
       <Projects />
       <Marqui2 />
       <Contact />
-      <Medal text='C7 STUDIO DESIGN AND DEVELOPMENT *'>
-        <h3 className="text-9xl">*</h3>
-      </Medal>
     </div>
   );
 }
