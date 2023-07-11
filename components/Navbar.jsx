@@ -40,18 +40,6 @@ const Navbar = () => {
           <Image src={logoNuevo} alt="Logo" width={66} height={51} />
         </Link>
         <ul className="hidden sm:flex">
-          <li className="px-2 ml-4 hover:text-gray-600">  
-            <Link
-              className="focus:outline-grey-400 cursor-pointer"
-              to="services"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-            >
-              Services
-            </Link>
-          </li>
           <li className="px-2 ml-4 hover:text-gray-600 focus:outline-grey-400">
             <Link
               className="focus:outline-grey-400 cursor-pointer"
@@ -62,6 +50,18 @@ const Navbar = () => {
               duration={500}
             >
               Projects
+            </Link>
+          </li>
+          <li className="px-2 ml-4 hover:text-gray-600">  
+            <Link
+              className="focus:outline-grey-400 cursor-pointer"
+              to="services"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              Services
             </Link>
           </li>
           <li className="px-2 ml-4 hover:text-gray-600 hover:border-gray-600 focus:outline-grey-400 border-black border">
@@ -97,13 +97,13 @@ const Navbar = () => {
         >
           <ul>
             <li className="cursor-pointer p-4 text-4xl hover:text-gray-500">
-              <Link onClick={handleNav} to="services">
-                Services
+              <Link onClick={handleNav} to="projects">
+                Projects
               </Link>
             </li>
             <li className="cursor-pointer p-4 text-4xl hover:text-gray-500">
-              <Link onClick={handleNav} to="projects">
-                Projects
+              <Link onClick={handleNav} to="services">
+                Services
               </Link>
             </li>
             <li className="cursor-pointer p-4 text-4xl hover:text-gray-500">

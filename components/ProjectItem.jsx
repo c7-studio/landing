@@ -9,7 +9,7 @@ function ProjectItem({ image, title, hasMargin, skill, description, link }) {
     <div className="flex flex-col justify-evenly border mx-auto max-h-full md:max-w-[49%] sm:max-w-full p-2 mt-2 sm:mt-0 ">
       <div className="">
         <Link href={link}>
-          <a>
+          
             <Image
               id=""
               width={1200}
@@ -19,7 +19,7 @@ function ProjectItem({ image, title, hasMargin, skill, description, link }) {
               onLoadingComplete={() => setLoading(false)}
               objectFit="responsive"
             />
-          </a>
+          
         </Link>
       </div>
       <div className="flex w-full justify-between pb-2">

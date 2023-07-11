@@ -21,7 +21,7 @@ export const Projects = () => {
             title="Templo de Tierra"
             skill="Web design & Development"
             description="We designed and developed this landing site for bioconstruction boutique hotel 'Templo de Tierra', using Next.Js, Tailwind CSS and design in Figma"
-            link=""
+            link="https://templodetierra.com/"
           />
         </div>
       </div>

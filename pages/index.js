@@ -22,8 +22,8 @@ export default function Home() {
       </Head>
       <Hero />
       <Marqui />
-      <Services />
       <Projects />
+      <Services />
       <Marqui2 />
       <Contact />
     </div>
