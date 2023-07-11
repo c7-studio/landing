@@ -64,13 +64,13 @@ export const Services = () => {
           </div>
         </div>
       </div>
-      <button
+      {/* <button
         onClick={() => router.push("/#projects", undefined, { scroll: false })}
         className="hidden mx-auto md:flex px-2 py-1 border-solid border border-black focus:outline-gray-400 items-center animate-pulse "
       >
         See our latest projects
         <MdKeyboardArrowDown size={20} className="ml-1" />
-      </button>
+      </button> */}
     </div>
   );
 };
