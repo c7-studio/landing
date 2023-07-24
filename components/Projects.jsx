@@ -5,7 +5,7 @@ import AnimatedTitle from "../utils/AnimatedTitle";
 
 export const Projects = () => {
   return (
-    <div className="mx-auto scroll-top pt-12" id="projects">
+    <div className="mx-auto scroll-top" id="projects">
       <div className="max-h-full max-w-full">
         <AnimatedTitle text="Latest Projects" customStyle="text-center md:text-left text-6xl px-5 pt-3"/>
         <div className="p-5 sm:flex block mx-auto">
@@ -14,7 +14,7 @@ export const Projects = () => {
             title="Kostume"
             skill="Web design & Development"
             description="We designed and developed this E-commerce for fashion wear 'Kostume' on Tienda Nube*. We used Figma for design, and customized a template in *TN, which uses Twig, a framework of PHP "
-            link="https://www.behance.net/gallery/155218353/Kostueme"
+            link="https://kostumeweb.net"
           />
           <ProjectItem
             image="/tdt_cover.png"

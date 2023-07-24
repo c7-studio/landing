@@ -28,17 +28,17 @@ const Hero = () => {
       <div className="flex flex-col md:flex-row items-center justify-center h-screen bg-fixed bg-cover bg-center mb-2 mx-auto">
           <div className="p-5 text-black z-[3] max-w-[920px] mx-auto">
           <h2 className="text-6xl text-center md:text-left my-8 md:mb-4 animate-fade-in-down duration-500 leading-[3.2rem] mt-24 md:mt-0">
-            C7 Studio is a creative agency based on collaboration.
+            We are a creative agency based on collaboration.
           </h2>
           <p className="text-center md:text-left text-2xl mb-8 md:mb-4 animate-fade-in-down duration-800">
-            We associate with companies that need performant and enticing
+            Associating with companies that need performant and enticing
             solutions for their digital products
           </p>
           <div className="flex justify-center md:inline-flex items-center">
             <button
               className="animate-fade-in-up duration-600 px-2 py-1 border-solid border border-black focus:outline-gray-400 inline-flex items-center  animate-pulse"
               onClick={() =>
-                router.push("/#services", undefined, { scroll: false })
+                router.push("/#projects", undefined, { scroll: false })
               }
             >
               <span className="">Learn more</span>

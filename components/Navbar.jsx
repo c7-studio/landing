@@ -3,7 +3,7 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { useRouter } from "next/router";
 import { Link } from "react-scroll/modules";
 import Image from "next/image";
-import logoNuevo from "../public/logoNuevo.png";
+import logoNuevo from "../public/nuevito3.png";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -15,20 +15,20 @@ const Navbar = () => {
     setNav(!nav);
   };
 
-  useEffect(() => {
-    const changeColor = () => {
-      if (window.scrollY >= 40) {
-        setColor("#ffffff");
-        setTextColor("#000000");
-        setBorder("1px");
-      } else {
-        setColor("transparent");
-        setTextColor("white");  
-        setBorder("0px")
-      }
-    };
-    window.addEventListener("scroll", changeColor);
-  }, []);
+  // useEffect(() => {
+  //   const changeColor = () => {
+  //     if (window.scrollY >= 40) {
+  //       setColor("#ffffff");
+  //       setTextColor("#000000");
+  //       setBorder("1px");
+  //     } else {
+  //       setColor("transparent");
+  //       setTextColor("white");  
+  //       setBorder("0px")
+  //     }
+  //   };
+  //   window.addEventListener("scroll", changeColor);
+  // }, []);
 
   return (
     <div

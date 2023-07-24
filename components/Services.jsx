@@ -41,7 +41,7 @@ export const Services = () => {
   }, []);
 
   return (
-    <div className="w-full animate-fade-in-down z-0 pt-12" id="services">
+    <div className="w-full animate-fade-in-down z-0" id="services">
       <div className="px-5 py-1">
         <AnimatedTitle text="Our Services" customStyle="text-6xl text-center sm:text-left pl-2"/>
         <div className="items-center flex justify-between mt-4 mx-auto">
