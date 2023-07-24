@@ -37,7 +37,7 @@ const Navbar = () => {
     >
       <div style={{ borderWidth: `${border}` }} className="max-w-[1720px] mx-auto flex justify-between items-center px-5 py-1 pt-3 text-black border-b-black transition duration-1000	">
         <Link href="/" to="hero">
-          <Image src={logoNuevo} alt="Logo" width={66} style={{height: "auto"}} />
+          <Image src={logoNuevo} alt="Logo" width={72} style={{height: "auto"}} />
         </Link>
         <ul className="hidden sm:flex">
           <li className="px-2 ml-4 hover:text-gray-600 focus:outline-grey-400">
