@@ -3,7 +3,7 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { useRouter } from "next/router";
 import { Link } from "react-scroll/modules";
 import Image from "next/image";
-import logoNuevo from "../public/nuevito3.png";
+import logoNuevo from "../public/nuevito4.svg";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -35,7 +35,7 @@ const Navbar = () => {
       style={{ backgroundColor: `${color}` }}
       className="fixed left-0 top-0 w-full z-50 ease-in duration-300 items-center"
     >
-      <div style={{ borderWidth: `${border}` }} className="max-w-[1720px] mx-auto flex justify-between items-center px-5 py-1 pt-3 text-black border-b-black transition duration-1000	">
+      <div style={{ borderWidth: `${border}` }} className="max-w-[1720px] mx-auto flex justify-between items-center px-5 text-black border-b-black transition duration-1000	">
         <Link href="/" to="hero">
           <Image src={logoNuevo} alt="Logo" width={72} height={72} />
         </Link>

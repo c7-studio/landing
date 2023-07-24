@@ -16,7 +16,7 @@ export const Projects = () => {
             description="We designed and developed this E-commerce for fashion wear 'Kostume' on Tienda Nube*. We used Figma for design, and customized a template in *TN, which uses Twig, a framework of PHP "
             link="https://kostumeweb.net"
           />
-          <ProjectItem
+          <ProjectItem className='cursor-pointer'
             image="/tdt_cover.png"
             title="Templo de Tierra"
             skill="Web design & Development"
