@@ -41,9 +41,9 @@ const Navbar = () => {
       <div style={{ borderWidth: `${border}` }} className="flex-row max-w-[1720px] mx-auto flex justify-between items-center px-5 text-black border-b-black transition duration-1000	">
         <Link href="/" to="hero">
           <div className="flex">
-            <Image className="" src={ci} alt="Logo" width={20} height={20} />
-            <Image className="loguitox mx-1" src={ast} alt="Logo" width={20} height={20} />
-            <Image className="" src={seven} alt="Logo" width={20} height={20} />
+            <Image className="" src={ci} alt="Logo" width={22} height={50} />
+            <Image className="loguitox mx-1" src={ast} alt="Logo" width={22} height={50} />
+            <Image className="" src={seven} alt="Logo" width={22} height={50} />
           </div>
         </Link>
         <ul className="hidden sm:flex">
