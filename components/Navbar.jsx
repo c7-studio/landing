@@ -3,7 +3,10 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { useRouter } from "next/router";
 import { Link } from "react-scroll/modules";
 import Image from "next/image";
-import logoNuevo from "../public/nuevito4.svg";
+import logoNuevo from "../public/nuevito5.svg";
+import ci from "../public/1 - C logo.svg";
+import ast from "../public/2 - ast logo.svg";
+import seven from "../public/3 - 7 logo.svg";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -35,9 +38,13 @@ const Navbar = () => {
       style={{ backgroundColor: `${color}` }}
       className="fixed left-0 top-0 w-full z-50 ease-in duration-300 items-center"
     >
-      <div style={{ borderWidth: `${border}` }} className="max-w-[1720px] mx-auto flex justify-between items-center px-5 text-black border-b-black transition duration-1000	">
+      <div style={{ borderWidth: `${border}` }} className="flex-row max-w-[1720px] mx-auto flex justify-between items-center px-5 text-black border-b-black transition duration-1000	">
         <Link href="/" to="hero">
-          <Image src={logoNuevo} alt="Logo" width={72} height={72} />
+          <div className="flex">
+            <Image className="" src={ci} alt="Logo" width={20} height={20} />
+            <Image className="loguitox mx-1" src={ast} alt="Logo" width={20} height={20} />
+            <Image className="" src={seven} alt="Logo" width={20} height={20} />
+          </div>
         </Link>
         <ul className="hidden sm:flex">
           <li className="px-2 ml-4 hover:text-gray-600 focus:outline-grey-400">

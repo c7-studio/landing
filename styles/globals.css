@@ -52,3 +52,20 @@ html{
         transform: rotate(360deg);
     }
 }
+
+.loguitox {
+    animation: spinX 5s linear infinite;
+    transition: opacity 0.5s;
+
+    
+}
+
+
+@keyframes spinX {
+    0%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
