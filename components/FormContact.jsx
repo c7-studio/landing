@@ -29,7 +29,7 @@ function FormContact() {
   };
 
   return (
-    <div className="py-12 md:basis-1/2 flex flex-col px-0 w-full">
+    <div className="pb-12 md:basis-1/2 flex flex-col px-0 w-full">
       <form className="flex flex-col" onSubmit={onSubmit}>
         <label htmlFor="name" className="mb-2">
           Name
