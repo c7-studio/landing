@@ -3,7 +3,10 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { useRouter } from "next/router";
 import { Link } from "react-scroll/modules";
 import Image from "next/image";
-import logoNuevo from "../public/logoNuevo.png";
+import logoNuevo from "../public/nuevito5.svg";
+import ci from "../public/1 - C logo.svg";
+import ast from "../public/2 - ast logo.svg";
+import seven from "../public/3 - 7 logo.svg";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -15,43 +18,35 @@ const Navbar = () => {
     setNav(!nav);
   };
 
-  useEffect(() => {
-    const changeColor = () => {
-      if (window.scrollY >= 40) {
-        setColor("#ffffff");
-        setTextColor("#000000");
-        setBorder("1px");
-      } else {
-        setColor("transparent");
-        setTextColor("white");  
-        setBorder("0px")
-      }
-    };
-    window.addEventListener("scroll", changeColor);
-  }, []);
+  // useEffect(() => {
+  //   const changeColor = () => {
+  //     if (window.scrollY >= 40) {
+  //       setColor("#ffffff");
+  //       setTextColor("#000000");
+  //       setBorder("1px");
+  //     } else {
+  //       setColor("transparent");
+  //       setTextColor("white");  
+  //       setBorder("0px")
+  //     }
+  //   };
+  //   window.addEventListener("scroll", changeColor);
+  // }, []);
 
   return (
     <div
       style={{ backgroundColor: `${color}` }}
       className="fixed left-0 top-0 w-full z-50 ease-in duration-300 items-center"
     >
-      <div style={{ borderWidth: `${border}` }} className="max-w-[1720px] mx-auto flex justify-between items-center px-5 py-1 pt-3 text-black border-b-black transition duration-1000	">
+      <div style={{ borderWidth: `${border}` }} className="flex-row max-w-[1720px] mx-auto flex justify-between items-center px-5 text-black border-b-black transition duration-1000	">
         <Link href="/" to="hero">
-          <Image src={logoNuevo} alt="Logo" width={66} height={51} />
+          <div className="flex">
+            <Image className="" src={ci} alt="Logo" width={22} height={50} />
+            <Image className="loguitox mx-1" src={ast} alt="Logo" width={22} height={50} />
+            <Image className="" src={seven} alt="Logo" width={22} height={50} />
+          </div>
         </Link>
         <ul className="hidden sm:flex">
-          <li className="px-2 ml-4 hover:text-gray-600">  
-            <Link
-              className="focus:outline-grey-400 cursor-pointer"
-              to="services"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-            >
-              Services
-            </Link>
-          </li>
           <li className="px-2 ml-4 hover:text-gray-600 focus:outline-grey-400">
             <Link
               className="focus:outline-grey-400 cursor-pointer"
@@ -62,6 +57,18 @@ const Navbar = () => {
               duration={500}
             >
               Projects
+            </Link>
+          </li>
+          <li className="px-2 ml-4 hover:text-gray-600">  
+            <Link
+              className="focus:outline-grey-400 cursor-pointer"
+              to="services"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              Services
             </Link>
           </li>
           <li className="px-2 ml-4 hover:text-gray-600 hover:border-gray-600 focus:outline-grey-400 border-black border">
@@ -97,13 +104,13 @@ const Navbar = () => {
         >
           <ul>
             <li className="cursor-pointer p-4 text-4xl hover:text-gray-500">
-              <Link onClick={handleNav} to="services">
-                Services
+              <Link onClick={handleNav} to="projects">
+                Projects
               </Link>
             </li>
             <li className="cursor-pointer p-4 text-4xl hover:text-gray-500">
-              <Link onClick={handleNav} to="projects">
-                Projects
+              <Link onClick={handleNav} to="services">
+                Services
               </Link>
             </li>
             <li className="cursor-pointer p-4 text-4xl hover:text-gray-500">

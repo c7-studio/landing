@@ -41,9 +41,9 @@ export const Services = () => {
   }, []);
 
   return (
-    <div className="w-full animate-fade-in-down z-0 pt-12" id="services">
+    <div className="w-full animate-fade-in-down z-0 pt-10" id="services">
       <div className="px-5 py-1">
-        <AnimatedTitle text="Our Services" customStyle="text-6xl text-center sm:text-left pl-2"/>
+        <AnimatedTitle text="Our Services" customStyle="text-6xl text-center sm:text-left"/>
         <div className="items-center flex justify-between mt-4 mx-auto">
         <div className="max-w-full flex-col flex md:flex-row md:justify-between mx-auto" ref={ref}>
             {list.map((item, i) => {
@@ -64,13 +64,13 @@ export const Services = () => {
           </div>
         </div>
       </div>
-      <button
+      {/* <button
         onClick={() => router.push("/#projects", undefined, { scroll: false })}
         className="hidden mx-auto md:flex px-2 py-1 border-solid border border-black focus:outline-gray-400 items-center animate-pulse "
       >
         See our latest projects
         <MdKeyboardArrowDown size={20} className="ml-1" />
-      </button>
+      </button> */}
     </div>
   );
 };

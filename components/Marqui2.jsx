@@ -9,7 +9,7 @@ const Marqui2 = () => {
         gradient={false}
         direction="left"
         speed={90}
-        className="text-9xl flex py-10 space-around w-full"
+        className="text-9xl flex space-around w-full"
       >
         <Image className="px-4" src="/icon1.png" width={100} height={100} />
         <span className="ml-2"></span>
