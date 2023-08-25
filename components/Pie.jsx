@@ -8,7 +8,7 @@ const Pie = () => {
       <div>
         <h6 className="text-sm">© Copyright 2023</h6>
       </div>
-      <Image src={loguito} alt="/" width={15} height={15} />
+      {/* <Image src={loguito} alt="/" width={15} height={15} /> */}
     </div>
   );
 };

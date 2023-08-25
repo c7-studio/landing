@@ -12,9 +12,9 @@ function Contact() {
         <AnimatedTitle text="Contact Us" customStyle="text-6xl text-center md:text-left"/>
         <div className="flex flex-col md:flex-row items-center justify-between">
           <FormContact />
-          <div className="flex flex-col justify-center md:pr-40">
-            <Image src={Gif} alt="Buenos Aires map" height={370} width={370} />
-            <h2>Located in Buenos Aires, Argentina</h2>
+          <div className="flex flex-col justify-center md:px-auto pb-40">
+            <Image className="" src={Gif} alt="C7 Studio" height={370} width={370} />
+            {/* <h2>Located in Buenos Aires, Argentina</h2>
             <p>-34.606331798816704, -58.435075902603835</p>
             <h5 className="flex flex-col focus:outline-gray-400 mt-6">
               also via e-mail
@@ -26,7 +26,7 @@ function Contact() {
                   c7studio.www@gmail.com
                 </Link>
               </span>
-            </h5>
+            </h5> */}
           </div>
         </div>
       </div>
