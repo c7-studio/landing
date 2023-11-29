@@ -18,21 +18,6 @@ const Navbar = () => {
     setNav(!nav);
   };
 
-  // useEffect(() => {
-  //   const changeColor = () => {
-  //     if (window.scrollY >= 40) {
-  //       setColor("#ffffff");
-  //       setTextColor("#000000");
-  //       setBorder("1px");
-  //     } else {
-  //       setColor("transparent");
-  //       setTextColor("white");  
-  //       setBorder("0px")
-  //     }
-  //   };
-  //   window.addEventListener("scroll", changeColor);
-  // }, []);
-
   return (
     <div
       style={{ backgroundColor: `${color}` }}

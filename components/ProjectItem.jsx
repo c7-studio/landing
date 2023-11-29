@@ -6,7 +6,7 @@ function ProjectItem({ image, title, hasMargin, skill, description, link }) {
   const [isLoading, setLoading] = useState(true);
 
   return (
-    <div className="flex flex-col justify-evenly border mx-auto max-h-full md:max-w-[49%] sm:max-w-full p-2 mt-2 sm:mt-0 ">
+    <div className="cursor-pointer col-span-1 row-span-1 flex flex-col justify-evenly border mx-auto max-h-full md:max-w-[100%] sm:max-w-full p-2 mt-2 sm:mt-0 ">
       <div className="">
         <Link href={link} className="cursor-pointer">
             <Image
